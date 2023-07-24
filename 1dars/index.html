@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        function masala() {
+            var a;
+            var b;
+            a = prompt('birinchi raqamni kiriting', '');
+            b = prompt('ikkinchi raqamni kiriting', '');
+            alert(a + '*' + b + '=' + (a * b));
+        }
+
+        function backcol(rang, yozuv) {
+            document.body.style.backgroundColor = rang;
+            document.body.style.fontSize        = yozuv;
+        }
+
+        function tanla() {
+            var a                               = prompt('rangni tanlang', 'white');
+            document.body.style.backgroundColor = a;
+            document.body.style.fontSize        = '50pt';
+            document.body.style.color           = 'red';
+        }
+    </script>
+</head>
+<body>
+<div id="sayt">
+    <h2 onclick="masala()">Javascript</h2>
+    <h2 onclick="backcol('red','15pt')">qizil</h2>
+    <h2 onclick="backcol('green','25pt')">yashil</h2>
+    <h2 onclick="backcol('blue','40pt')">ko'k</h2>
+    <h2 onclick="tanla()">O'zingiz tanlang</h2>
+</div>
+</body>
+</html>
