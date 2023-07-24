@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        function al() {
+            var a = document.f.jins.value;
+            if (a == 'er') {
+                document.body.style.color = 'blue';
+            }
+            if (a == 'ay') {
+                document.body.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="f">
+    <input type="radio" name="jins" value="er" onclick="al()">Erkak<br>
+    <input type="radio" name="jins" value="ay" onclick="al()">Ayol<br>
+    <p>
+        function masala() {
+        var a;
+        var b;
+        a = prompt('birinchi raqamni kiriting', '');
+        b = prompt('ikkinchi raqamni kiriting', '');
+        alert(a + '*' + b + '=' + (a * b));
+        }
+
+        function backcol(rang, yozuv) {
+        document.body.style.backgroundColor = rang;
+        document.body.style.fontSize = yozuv;
+        }
+
+        function tanla() {
+        var a = prompt('rangni tanlang', 'white');
+        document.body.style.backgroundColor = a;
+        document.body.style.fontSize = '50pt';
+        document.body.style.color = 'red';
+        }
+    </p>
+</form>
+</body>
+</html>
