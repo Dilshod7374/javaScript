@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        function rasm() {
+            var a = document.form.jins.value;
+            if (a == 'er') {
+                document.getElementById('r').src = "beach.jpg";
+            } else {
+                document.getElementById('r').src = 'Travel.jpg';
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="" name="form">
+    <input type="radio" value="er" onclick="rasm()" name="jins">Erkak<br>
+    <input type="radio" value="ayol" onclick="rasm()" name="jins">Ayol<br>
+    <img src="" alt="" id="r">
+</form>
+</body>
+</html>
